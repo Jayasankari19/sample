@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>js_ty</title>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-gray-100">
+
+    <form class="bg-white p-8 rounded shadow-md w-full max-w-md">
+        <!-- Title Input Field -->
+        <label for="title" class="block font-semibold">Title:</label><br>
+        <input type="text" id="title" name="title" placeholder="Enter the title" required class="w-full p-2 mt-1 border border-gray-300 rounded"><br><br>
+        <!-- Post Textarea Field -->
+        <label for="post" class="block font-semibold">Post:</label><br>
+        <textarea id="post" name="post" rows="6" cols="50" placeholder="Write your post here..." required class="w-full p-2 mt-1 border border-gray-300 rounded"></textarea><br><br>
+
+        <input type="submit" id="btn" value="Submit" class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 cursor-pointer">
+    </form>
+
+    <div id="blogPosts" class="space-y-4 max-w-2xl mx-auto">
+        <!-- Posts will be displayed here dynamically -->
+      </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
